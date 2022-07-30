@@ -1,0 +1,61 @@
+/* Your code here */
+.main-content{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-areas:"main-article opinion"
+}
+.main__article{
+    grid-area:main-article;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    grid-template-areas:
+    "header ."
+    "article1 video"
+    "article2 article3"
+}
+.opinions{
+    grid-area:opinion;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1.5fr 1fr;
+    grid-template-areas:
+    "opinions"
+    "operation"
+    "multi-articles"
+}
+
+#main-h1{
+    grid-area:header;
+
+    font-weight:  bold;;
+    font-size:25px;
+
+
+}
+.main-2{
+    grid-area:article1
+}
+
+
+.video-part{
+    grid-area:video
+}
+.main-4{
+    grid-area:article2;
+}
+.main-5{
+    grid-area:article3;
+}
+
+.top-opinion{
+    grid-area:opinions;
+}
+
+.mid-opinion{
+    grid-area:operation;
+}
+
+.bottom-opinion{
+    grid-area:multi-articles
+}

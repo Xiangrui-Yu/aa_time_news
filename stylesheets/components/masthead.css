@@ -1,0 +1,92 @@
+/* Your code here */
+.masthead{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "menuandsearch . actionbuttons"
+    ". littletechnologies ."
+    "date logo today-paper";
+
+}
+
+.masthead__menu-and-search{
+    grid-area: menuandsearch;
+}
+
+.masthead__actions{
+    grid-area: actionbuttons;
+
+
+}
+
+.masthead__technologies{
+    grid-area: littletechnologies;
+    font-size:10px;
+    text-transform: uppercase;
+    color:darkgray;
+    display:flex;
+    justify-content: center;
+
+}
+.masthead__technologies span {
+    top:1px;
+    margin: 0 3px;
+    display: flex;
+    justify-content: center;
+    border-top:1px solid #6f6f6f; ;
+    border-left:1px solid #6f6f6f;;
+    border-right:1px solid #6f6f6f;;
+    background-color: white;
+
+}
+
+.masthead__date{
+    grid-area: date;
+    font-size:11px;
+
+}
+
+.masthead__logo{
+    grid-area: logo;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.masthead__paper {
+    grid-area: today-paper;
+    font-size:11px;
+    }
+
+.masthead__date,.masthead__logo,.masthead__paper{
+    border-bottom: 1px solid #6f6f6f;
+    padding-bottom: 11px;
+    border-top: 1px solid #6f6f6f;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.masthead-button{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+
+}
+.masthead-button > div{
+
+    padding: 7px 9px;
+}
+
+.masthead-button:hover{
+    background-color: lightgray;
+}
+
+.masthead__actions{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding:7px;
+}

@@ -1,0 +1,114 @@
+/* Your code here */
+.interest-bar{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+    grid-template-areas:
+    "img1 header-story-1 img2 header-story-2 img3 header-story-3 stock img4 bigtext";
+    padding: auto;
+    margin:auto;
+    border-bottom: 1px solid #6f6f6f;
+    border-top: 1px solid #6f6f6f;
+
+
+}
+.dogimg{
+    grid-area:img1;
+    box-sizing: border-box;
+    align-self:center;
+}
+.catimg{
+    grid-area:img2;
+    align-self:center;
+
+}
+.plugimg{
+    grid-area:img3;
+    align-self:center;
+
+}
+.sunimg{
+    grid-area:img4;
+    align-self:center;
+
+
+}
+
+
+/* <!-- story and headline  --> */
+
+.dog-headline{
+    font-weight:bold;
+    grid-area: header-story-1;
+    align-self: flex-start;
+    border-right:1px solid #6f6f6f;
+
+
+}
+.dog-story{
+    grid-area: header-story-1;
+    align-self:center;
+    position:relative;
+    bottom:15px;
+    border-right:1px solid #6f6f6f;
+}
+
+.cat-headline{
+    font-weight:bold;
+    grid-area: header-story-2;
+    align-self:flex-start;
+    border-right:1px solid #6f6f6f;
+
+}
+.cat-story{
+    grid-area: header-story-2;
+    align-self:center;
+    position:relative;
+    bottom:10px;
+    border-right:1px solid #6f6f6f;
+
+}
+
+.plug-headline{
+    font-weight:bold;
+    grid-area: header-story-3;
+    align-self:flex-start;
+    border-right:1px solid #6f6f6f;
+
+}
+
+.plug-story{
+    grid-area: header-story-3;
+    align-self:center;
+    position: relative;
+    bottom:25px;
+    border-right:1px solid #6f6f6f;
+
+}
+
+/*<!-- stock-info --> */
+
+.stock{
+    grid-area: stock;
+    display: flex;
+    justify-content: space-around;
+    border-right:1px solid #6f6f6f;
+
+
+}
+.stockprice{
+    color: green;
+
+}
+.stock p{
+    padding:10px;
+    border-bottom:1px solid #6f6f6f;
+
+
+}
+
+.bigtext{
+    grid-area:bigtext;
+    align-self: center;
+    border-right:1px solid #6f6f6f;
+
+}

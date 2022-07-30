@@ -1,0 +1,17 @@
+/* Your code here */
+.main-nav{
+    font-size:12px;
+
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+
+
+}
+
+.nav__list li{
+    padding: 5px;
+}
