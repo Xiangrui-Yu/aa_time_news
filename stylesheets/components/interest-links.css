@@ -109,6 +109,6 @@
 .bigtext{
     grid-area:bigtext;
     align-self: center;
-    border-right:1px solid #6f6f6f;
+    border-right:1px solid lightgray;
 
 }
