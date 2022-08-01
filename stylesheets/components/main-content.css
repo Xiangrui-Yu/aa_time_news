@@ -192,3 +192,21 @@ ul li {
 #bot-7{
     grid-area: cell7
 }
+
+
+@media (max-width: 1200px){
+    .opinions{
+        display: none;
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-areas:"main-article"
+    }
+}
+
+@media (max-width:1000px) {
+    .interest-bar{
+        display: none;
+    }
+}
